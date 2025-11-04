@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "gHZY8HHnIzgzngyxRRIIn5uRjL+xfpvZpx+osG+wCjDbfsHCxc//4jexKMRzzykAK5gCa0rD/W2wLMZTEPktRw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\03233619006\\source\\repos\\MedicalRecord\\MedicalRecord.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\03233619006\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.10\\microsoft.bcl.asyncinterfaces.9.0.10.nupkg.sha512",
+    "C:\\Users\\03233619006\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.10\\microsoft.extensions.dependencyinjection.9.0.10.nupkg.sha512",
+    "C:\\Users\\03233619006\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.10\\microsoft.extensions.dependencyinjection.abstractions.9.0.10.nupkg.sha512",
+    "C:\\Users\\03233619006\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\03233619006\\.nuget\\packages\\system.io.pipelines\\9.0.10\\system.io.pipelines.9.0.10.nupkg.sha512",
+    "C:\\Users\\03233619006\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\03233619006\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\03233619006\\.nuget\\packages\\system.text.encodings.web\\9.0.10\\system.text.encodings.web.9.0.10.nupkg.sha512",
+    "C:\\Users\\03233619006\\.nuget\\packages\\system.text.json\\9.0.10\\system.text.json.9.0.10.nupkg.sha512",
+    "C:\\Users\\03233619006\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
