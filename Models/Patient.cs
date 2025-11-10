@@ -8,7 +8,7 @@ namespace MedicalRecord.Models
     public class Patient
     {
         // Chave Primária
-        public int PatientID { get; set; }
+        public int ID { get; set; }
 
         [Required(ErrorMessage = "O nome completo é obrigatório.")]
         [StringLength(100)]
@@ -18,6 +18,8 @@ namespace MedicalRecord.Models
         [DataType(DataType.Date)]
         [Display(Name = "Data de Nascimento")]
         public DateTime DateBirth { get; set; }
+
+        public Boolean Gender { get; set; }
 
         [Required(ErrorMessage = "O CPF é obrigatório.")]
         [StringLength(14)]
@@ -32,6 +34,8 @@ namespace MedicalRecord.Models
         [StringLength(200)]
         [Display(Name = "Endereço Completo")]
         public string Address { get; set; }
+
+
 
         // Propriedades de Navegação (para os relacionamentos)
         public ICollection<PatientEntry> PatientEntry { get; set; } = new List<PatientEntry>();

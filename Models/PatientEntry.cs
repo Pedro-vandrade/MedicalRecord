@@ -6,7 +6,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace MedicalRecord.Models
 {
-    public class PatienEntry
+    public class PatientEntry
     {
         // Chave Primária
         public int EntryID { get; set; }
@@ -38,3 +38,8 @@ namespace MedicalRecord.Models
         public ICollection<Treatment> PrescribedTreatment { get; set; } = new List<Treatment>();
     }
 }
+
+// CONSULTA/ AGENDAMENTO - MEDICO - PACIENTE - PACIENTE HISTORICO - TRATAMENTO/RECEITA - PAGAMENTO - EXAMES
+
+// CLINICA 
+

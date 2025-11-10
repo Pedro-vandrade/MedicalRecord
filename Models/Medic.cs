@@ -17,7 +17,7 @@ namespace MedicalRecord.Models
         public string CRM { get; set; } // Conselho Regional de Medicina
 
         [StringLength(50)]
-        public string Specialty { get; set; }
+        public string Specialty { get; set; } // USAR ENUM 
 
         [EmailAddress(ErrorMessage = "Formato de e-mail inválido.")]
         public string Email { get; set; }
@@ -26,3 +26,4 @@ namespace MedicalRecord.Models
         public ICollection<PatientEntry> PatientEntry { get; set; } = new List<PatientEntry>();
     }
 }
+
