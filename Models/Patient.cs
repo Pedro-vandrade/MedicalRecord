@@ -41,5 +41,6 @@ namespace MedicalRecord.Models
         public ICollection<PatientEntry> PatientEntry { get; set; } = new List<PatientEntry>();
         public ICollection<Test> Test { get; set; } = new List<Test>();
         public ICollection<Treatment> Treatment { get; set; } = new List<Treatment>();
+        public object History { get; internal set; }
     }
 }
