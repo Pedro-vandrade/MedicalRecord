@@ -4,15 +4,21 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Edit Patient</h1>
 
-<h4>Patient</h4>
+<h4>Demographics</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* IMPORTANT: Ensure the hidden field binds to the correct primary key name (PatientId) *@
+            @* If your primary key is named PatientId, change Id to PatientId here. *@
             <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="DateRegistered" /> @* Keep DateRegistered hidden but bound *@
+
+            @* --- Text Inputs (Standard Fields) --- *@
             <div class="form-group">
                 <label asp-for="FirstName" class="control-label"></label>
                 <input asp-for="FirstName" class="form-control" />
@@ -25,9 +31,40 @@
             </div>
             <div class="form-group">
                 <label asp-for="DateOfBirth" class="control-label"></label>
-                <input asp-for="DateOfBirth" class="form-control" />
+                <input asp-for="DateOfBirth" class="form-control" type="date" />
                 <span asp-validation-for="DateOfBirth" class="text-danger"></span>
             </div>
+
+            @* --- Dropdown Inputs (Enum Fields) --- *@
+
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label"></label>
+                <select asp-for="Gender"
+                        class="form-control"
+                        asp-items="@(new SelectList(ViewBag.GenderIdentities))">
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaritalStatus" class="control-label"></label>
+                <select asp-for="MaritalStatus"
+                        class="form-control"
+                        asp-items="@(new SelectList(ViewBag.MaritalStatuses))">
+                </select>
+                <span asp-validation-for="MaritalStatus" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="BloodType" class="control-label"></label>
+                <select asp-for="BloodType"
+                        class="form-control"
+                        asp-items="@(new SelectList(ViewBag.BloodTypes))">
+                </select>
+                <span asp-validation-for="BloodType" class="text-danger"></span>
+            </div>
+
+            @* --- Contact Fields --- *@
             <div class="form-group">
                 <label asp-for="PhoneNumber" class="control-label"></label>
                 <input asp-for="PhoneNumber" class="form-control" />
@@ -53,12 +90,10 @@
                 <input asp-for="PostalCode" class="form-control" />
                 <span asp-validation-for="PostalCode" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="DateRegistered" class="control-label"></label>
-                <input asp-for="DateRegistered" class="form-control" />
-                <span asp-validation-for="DateRegistered" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+
+            @* DateRegistered: Removed input field as it should be hidden (done above) *@
+
+            <div class="form-group mt-3">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
@@ -70,5 +105,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

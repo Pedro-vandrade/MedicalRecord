@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MedicalRecord.Data;
 using MedicalRecord.Models;
+using MedicalRecord.Models.Enums;
 
 namespace MedicalRecord.Controllers
 {
@@ -19,12 +18,20 @@ namespace MedicalRecord.Controllers
             _context = context;
         }
 
+        // Helper method to populate ViewBag for dropdowns
+        private void PopulateEnumViewBags()
+        {
+            ViewBag.PhysicianSpecialties = Enum.GetValues(typeof(PhysicianSpecialty));
+        }
+
+        // 1. READ (List)
         // GET: Physicians
         public async Task<IActionResult> Index()
         {
             return View(await _context.Physicians.ToListAsync());
         }
 
+        // 2. READ (Details)
         // GET: Physicians/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -33,6 +40,7 @@ namespace MedicalRecord.Controllers
                 return NotFound();
             }
 
+            // Use PhysicianId as the primary key reference
             var physician = await _context.Physicians
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (physician == null)
@@ -43,18 +51,18 @@ namespace MedicalRecord.Controllers
             return View(physician);
         }
 
+        // 3. CREATE
         // GET: Physicians/Create
         public IActionResult Create()
         {
+            PopulateEnumViewBags(); // FIX: Load Enums
             return View();
         }
 
         // POST: Physicians/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,CRM,PhoneNumber")] Physician physician)
+        public async Task<IActionResult> Create([Bind("FirstName,LastName,PhysicianSpecialty,CRM,PhoneNumber")] Physician physician)
         {
             if (ModelState.IsValid)
             {
@@ -62,9 +70,12 @@ namespace MedicalRecord.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            PopulateEnumViewBags(); // Reload Enums if validation fails
             return View(physician);
         }
 
+        // 4. UPDATE (Edit)
         // GET: Physicians/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -78,15 +89,16 @@ namespace MedicalRecord.Controllers
             {
                 return NotFound();
             }
+
+            PopulateEnumViewBags(); // Load Enums for the View
             return View(physician);
         }
 
         // POST: Physicians/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,CRM,PhoneNumber")] Physician physician)
+        // Ensure PhysicianId is bound to track the record
+        public async Task<IActionResult> Edit(int id, [Bind("PhysicianId,FirstName,LastName,PhysicianSpecialty,CRM,PhoneNumber")] Physician physician)
         {
             if (id != physician.Id)
             {
@@ -102,7 +114,7 @@ namespace MedicalRecord.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PhysicianExists(physician.Id))
+                    if (!_context.Physicians.Any(e => e.Id == physician.Id))
                     {
                         return NotFound();
                     }
@@ -113,10 +125,13 @@ namespace MedicalRecord.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            PopulateEnumViewBags(); // Reload Enums if validation fails
             return View(physician);
         }
 
-        // GET: Physicians/Delete/5
+        // 5. DELETE
+        // GET: Physicians/Delete/5 (Confirmation)
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -134,7 +149,7 @@ namespace MedicalRecord.Controllers
             return View(physician);
         }
 
-        // POST: Physicians/Delete/5
+        // POST: Physicians/Delete/5 (Execution)
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -147,11 +162,6 @@ namespace MedicalRecord.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool PhysicianExists(int id)
-        {
-            return _context.Physicians.Any(e => e.Id == id);
         }
     }
 }

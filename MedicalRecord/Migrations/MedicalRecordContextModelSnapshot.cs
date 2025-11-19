@@ -171,8 +171,9 @@ namespace MedicalRecord.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("Specialty")
-                        .HasColumnType("int");
+                    b.Property<string>("PhysicianSpecialty")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 

@@ -1,17 +1,19 @@
 ﻿@model MedicalRecord.Models.Patient
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Register New Patient";
 }
 
-<h1>Create</h1>
+<h1>Register Patient</h1>
 
-<h4>Patient</h4>
+<h4>Demographics</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* --- Text Inputs (Standard Fields) --- *@
             <div class="form-group">
                 <label asp-for="FirstName" class="control-label"></label>
                 <input asp-for="FirstName" class="form-control" />
@@ -24,24 +26,43 @@
             </div>
             <div class="form-group">
                 <label asp-for="DateOfBirth" class="control-label"></label>
-                <input asp-for="DateOfBirth" class="form-control" />
+                <input asp-for="DateOfBirth" class="form-control" type="date" /> @* Added type="date" for better UX *@
                 <span asp-validation-for="DateOfBirth" class="text-danger"></span>
             </div>
+
+            @* --- Dropdown Inputs (Enum Fields) --- *@
+
             <div class="form-group">
                 <label asp-for="Gender" class="control-label"></label>
-                <input asp-for="Gender" class="form-control" />
+                <select asp-for="Gender"
+                        class="form-control"
+                        asp-items="@(new SelectList(ViewBag.GenderIdentities))">
+                    <option value="">-- Select Gender Identity --</option>
+                </select>
                 <span asp-validation-for="Gender" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="MaritalStatus" class="control-label"></label>
-                <input asp-for="MaritalStatus" class="form-control" />
+                <select asp-for="MaritalStatus"
+                        class="form-control"
+                        asp-items="@(new SelectList(ViewBag.MaritalStatuses))">
+                    <option value="">-- Select Marital Status --</option>
+                </select>
                 <span asp-validation-for="MaritalStatus" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="BloodType" class="control-label"></label>
-                <input asp-for="BloodType" class="form-control" />
+                <select asp-for="BloodType"
+                        class="form-control"
+                        asp-items="@(new SelectList(ViewBag.BloodTypes))">
+                    <option value="">-- Select Blood Type --</option>
+                </select>
                 <span asp-validation-for="BloodType" class="text-danger"></span>
             </div>
+
+            @* --- Contact Fields --- *@
             <div class="form-group">
                 <label asp-for="PhoneNumber" class="control-label"></label>
                 <input asp-for="PhoneNumber" class="form-control" />
@@ -67,13 +88,16 @@
                 <input asp-for="PostalCode" class="form-control" />
                 <span asp-validation-for="PostalCode" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            @* DateRegistered should NOT be a user input, it's set in the Controller POST method *@
+            @* <div class="form-group">
                 <label asp-for="DateRegistered" class="control-label"></label>
                 <input asp-for="DateRegistered" class="form-control" />
                 <span asp-validation-for="DateRegistered" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            </div> *@
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Register Patient" class="btn btn-primary" />
             </div>
         </form>
     </div>
@@ -84,5 +108,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

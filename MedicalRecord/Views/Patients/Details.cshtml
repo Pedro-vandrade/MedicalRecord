@@ -4,69 +4,95 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Patient Details</h1>
 
 <div>
     <h4>Patient</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        @* --- CORE DEMOGRAPHICS --- *@
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.FirstName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.LastName)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.LastName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.DateOfBirth)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.DateOfBirth)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* --- NEW ENUM FIELDS (ADDED) --- *@
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Gender) @* Automatically displays the Enum name (e.g., 'Female') *@
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MaritalStatus)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MaritalStatus) @* Automatically displays the Enum name (e.g., 'Married') *@
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BloodType) @* Automatically displays the Enum name (e.g., 'OPositive') *@
+        </dd>
+
+        @* --- CONTACT INFORMATION --- *@
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.PhoneNumber)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.PhoneNumber)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Email)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Email)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Address)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Address)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.City)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.City)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.PostalCode)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.PostalCode)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* --- ADMINISTRATIVE --- *@
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.DateRegistered)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.DateRegistered)
         </dd>
     </dl>
 </div>
 <div>
+    @* NOTE: Changed @Model?.Id to @Model?.PatientId assuming you fixed the model property name *@
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

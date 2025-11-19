@@ -11,8 +11,8 @@ namespace MedicalRecord.Models
         [Required]
         public string LastName { get; set; }
 
-        [Required]
-        public Enums.PhysicianSpecialty Specialty { get; set; }
+        // Adicione esta propriedade para corrigir o erro CS1061
+        public string PhysicianSpecialty { get; set; }
 
         [Required]
         public string CRM { get; set; }
