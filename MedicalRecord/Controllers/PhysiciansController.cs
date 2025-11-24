@@ -40,6 +40,10 @@ namespace MedicalRecord.Controllers
                 return NotFound();
             }
 
+            var appointments = _context.Appointments.Include("Patient").Where(appt => appt.PhysicianId == Id).ToList();
+
+            //verifcar como usar viewbag para não precisar criar uma classe auxiliar viewmodel
+
             // Use PhysicianId as the primary key reference
             var physician = await _context.Physicians
                 .FirstOrDefaultAsync(m => m.Id == id);

@@ -26,5 +26,6 @@ namespace MedicalRecord.Models
         {
             return Appointments.Count(apt => apt.AppointmentDate >= initial && apt.AppointmentDate <= final);
         }
+
     }
 }
