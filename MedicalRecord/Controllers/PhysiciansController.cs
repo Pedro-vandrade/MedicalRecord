@@ -40,7 +40,7 @@ namespace MedicalRecord.Controllers
                 return NotFound();
             }
 
-            var appointments = _context.Appointments.Include("Patient").Where(appt => appt.PhysicianId == Id).ToList();
+            var appointments = _context.Appointments.Include("Patient").Where(appt => appt.PhysicianId == id).ToList();
 
             //verifcar como usar viewbag para não precisar criar uma classe auxiliar viewmodel
 

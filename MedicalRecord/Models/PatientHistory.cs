@@ -1,4 +1,5 @@
 ﻿using MedicalRecord.Models.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace MedicalRecord.Models
 {
@@ -9,6 +10,10 @@ namespace MedicalRecord.Models
 
         // Foreign Key (Links this history record directly to the Patient)
         public int PatientId { get; set; }
+
+        [Required]
+        [Display(Name = "Blood Type")]
+        public BloodType BloodType { get; set; }
 
         // Medical History
         [Display(Name = "Known Conditions")]

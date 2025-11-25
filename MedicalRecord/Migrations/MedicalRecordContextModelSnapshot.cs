@@ -61,9 +61,6 @@ namespace MedicalRecord.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("BloodType")
-                        .HasColumnType("int");
-
                     b.Property<string>("City")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -112,7 +109,7 @@ namespace MedicalRecord.Migrations
 
             modelBuilder.Entity("MedicalRecord.Models.PatientHistory", b =>
                 {
-                    b.Property<int>("PatientHistoryId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
@@ -120,17 +117,17 @@ namespace MedicalRecord.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("ExerciseActivity")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("BloodType")
+                        .HasColumnType("int");
 
-                    b.Property<string>("ExerciseFrequency")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("ExerciseActivity")
+                        .HasColumnType("int");
 
-                    b.Property<string>("KnownConditionsAndDiseases")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("ExerciseFrequency")
+                        .HasColumnType("int");
+
+                    b.Property<int>("KnownConditionsAndDiseases")
+                        .HasColumnType("int");
 
                     b.Property<int>("PatientId")
                         .HasColumnType("int");
@@ -138,11 +135,10 @@ namespace MedicalRecord.Migrations
                     b.Property<bool>("Smoker")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<string>("SurgicalHistory")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("SurgicalHistory")
+                        .HasColumnType("int");
 
-                    b.HasKey("PatientHistoryId");
+                    b.HasKey("Id");
 
                     b.HasIndex("PatientId");
 

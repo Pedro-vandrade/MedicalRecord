@@ -22,8 +22,7 @@ namespace MedicalRecord.Models
         [Required]
         public MaritalStatus MaritalStatus { get; set; }
 
-        [Required]
-        public BloodType BloodType { get; set; }
+        
 
         // Contact Information - All Required
         [Required]

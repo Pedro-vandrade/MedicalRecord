@@ -262,3 +262,13 @@ C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\obj\Debug\net8.0\
 C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\obj\Debug\net8.0\MedicalRecord.pdb
 C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\obj\Debug\net8.0\MedicalRecord.genruntimeconfig.cache
 C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\obj\Debug\net8.0\ref\MedicalRecord.dll
+C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Pedro Vargas\source\repos\MedicalRecord\MedicalRecord\bin\Debug\net8.0\System.ClientModel.dll

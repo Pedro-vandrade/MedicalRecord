@@ -1,0 +1,105 @@
+﻿@model MedicalRecord.Models.PatientHistory
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>PatientHistory</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="PatientId" class="control-label"></label>
+                <select asp-for="PatientId" class="form-control" asp-items="ViewBag.PatientId"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="BloodType" class="control-label"></label>
+                <select asp-for="BloodType"
+                        class="form-control"
+                        asp-items="@(new SelectList(ViewBag.BloodTypes))">
+                    <option value="">-- Select Blood Type --</option>
+                </select>
+                <span asp-validation-for="BloodType" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="KnownConditionsAndDiseases" class="control-label"></label>
+                <select asp-for="KnownConditionsAndDiseases"
+                        class="form-control"
+                        multiple="multiple" @* <-- ADDED FOR MULTI-SELECT *@
+                        asp-items="@(new SelectList(ViewBag.Diseases))">
+                    <option value="">-- Select Conditions/Diseases --</option>
+                </select>
+                <span asp-validation-for="KnownConditionsAndDiseases" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SurgicalHistory" class="control-label"></label>
+                <select asp-for="SurgicalHistory"
+                        class="form-control"
+                        multiple="multiple" @* <-- ADDED FOR MULTI-SELECT *@
+                        asp-items="@(new SelectList(ViewBag.Surgeries))">
+                    <option value="">-- Select Surgical History --</option>
+                </select>
+                <span asp-validation-for="SurgicalHistory" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ExerciseActivity" class="control-label"></label>
+                <select asp-for="ExerciseActivity"
+                        class="form-control"
+                        multiple="multiple" @* <-- ADDED FOR MULTI-SELECT *@
+                        asp-items="@(new SelectList(ViewBag.ExerciseActivityEnum))">
+                    <option value="">-- Select Exercise Activity --</option>
+                </select>
+                <span asp-validation-for="ExerciseActivity" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ExerciseFrequency" class="control-label"></label>
+                <select asp-for="ExerciseFrequency"
+                        class="form-control"
+                        asp-items="@(new SelectList(ViewBag.ExerciseFrequencyEnum))">
+                    <option value="">-- Select Exercise Frequency --</option>
+                </select>
+                <span asp-validation-for="ExerciseFrequency" class="text-danger"></span>
+            </div>
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Smoker" /> @Html.DisplayNameFor(model => model.Smoker)
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AlcoholConsumption" class="control-label"></label>
+                <select asp-for="AlcoholConsumption"
+                        class="form-control"
+                        asp-items="@(new SelectList(ViewBag.AlcoholConsumptionEnum))">
+                    <option value="">-- Select Alcohol Consumption --</option>
+                </select>
+                <span asp-validation-for="AlcoholConsumption" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
