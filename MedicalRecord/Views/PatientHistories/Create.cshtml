@@ -23,15 +23,15 @@
                 <select asp-for="BloodType"
                         class="form-control"
                         asp-items="@(new SelectList(ViewBag.BloodTypes))">
-                    <option value="">-- Select Blood Type --</option>
+                    <option value=""> - Select Blood Type - </option>
                 </select>
                 <span asp-validation-for="BloodType" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
+            <div class="form-checkbox">
                 <label asp-for="KnownConditionsAndDiseases" class="control-label"></label>
                 <select asp-for="KnownConditionsAndDiseases"
-                        class="form-control"
+                        class="form-checkbox"
                         multiple="multiple" @* <-- ADDED FOR MULTI-SELECT *@
                         asp-items="@(new SelectList(ViewBag.Diseases))">
                     <option value="">-- Select Conditions/Diseases --</option>

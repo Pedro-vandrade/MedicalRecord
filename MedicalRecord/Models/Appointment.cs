@@ -4,11 +4,15 @@
     {
         public int Id { get; set; }
         public int PatientId { get; set; }
+        public Patient Patient { get; set; }
         public int PhysicianId { get; set; }
+        public Physician Physician { get; set; }
+
         public DateTime AppointmentDate { get; set; }
         public string ReasonForVisit { get; set; }
         public string Notes { get; set; }
 
         
+
     }
 }

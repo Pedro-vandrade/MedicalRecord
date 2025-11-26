@@ -7,9 +7,7 @@ namespace MedicalRecord.Models
         public int Id { get; set; }
 
         [Required]
-        public string FirstName { get; set; }
-        [Required]
-        public string LastName { get; set; }
+        public string FullDocName { get; set; }
 
         // Adicione esta propriedade para corrigir o erro CS1061
         public string PhysicianSpecialty { get; set; }

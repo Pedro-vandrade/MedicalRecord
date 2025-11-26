@@ -11,6 +11,18 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Patient)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Patient.Address)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Physician)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Physician.CRM)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.AppointmentDate)
         </dt>
         <dd class = "col-sm-10">

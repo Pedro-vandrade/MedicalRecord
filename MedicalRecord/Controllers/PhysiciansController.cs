@@ -66,7 +66,7 @@ namespace MedicalRecord.Controllers
         // POST: Physicians/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("FirstName,LastName,PhysicianSpecialty,CRM,PhoneNumber")] Physician physician)
+        public async Task<IActionResult> Create([Bind("FullDocName,PhysicianSpecialty,CRM,PhoneNumber")] Physician physician)
         {
             if (ModelState.IsValid)
             {
@@ -102,7 +102,7 @@ namespace MedicalRecord.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         // Ensure PhysicianId is bound to track the record
-        public async Task<IActionResult> Edit(int id, [Bind("PhysicianId,FirstName,LastName,PhysicianSpecialty,CRM,PhoneNumber")] Physician physician)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,FullDocName,PhysicianSpecialty,CRM,PhoneNumber")] Physician physician)
         {
             if (id != physician.Id)
             {

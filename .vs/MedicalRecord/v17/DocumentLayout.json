@@ -3,52 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\enums\\bloodtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\enums\\bloodtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\patienthistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\patienthistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\physician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\physician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\enums\\alcconsumption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\enums\\alcconsumption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\medicalrecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\medicalrecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\views\\patienthistories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\views\\patienthistories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\migrations\\20251126045219_appt-phycian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\migrations\\20251126045219_appt-phycian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\views\\patienthistories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\views\\patienthistories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\migrations\\20251126041640_fullname-second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\migrations\\20251126041640_fullname-second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\enums\\diseasesconditions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\enums\\diseasesconditions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\views\\physicians\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\views\\physicians\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\enums\\surgicalprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\enums\\surgicalprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\enums\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\enums\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\controllers\\patienthistoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\controllers\\patienthistoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\views\\patients\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\views\\patients\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\controllers\\physicianscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\controllers\\physicianscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,166 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PatientHistory.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\PatientHistory.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Models\\PatientHistory.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\PatientHistory.cs",
-              "RelativeToolTip": "MedicalRecord\\Models\\PatientHistory.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T05:39:45.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BloodType.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Enums\\BloodType.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Models\\Enums\\BloodType.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Enums\\BloodType.cs",
-              "RelativeToolTip": "MedicalRecord\\Models\\Enums\\BloodType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
+              "Title": "Prescription.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Prescription.cs",
+              "RelativeDocumentMoniker": "MedicalRecord\\Models\\Prescription.cs",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Prescription.cs",
+              "RelativeToolTip": "MedicalRecord\\Models\\Prescription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T05:38:53.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DiseasesConditions.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Enums\\DiseasesConditions.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Models\\Enums\\DiseasesConditions.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Enums\\DiseasesConditions.cs",
-              "RelativeToolTip": "MedicalRecord\\Models\\Enums\\DiseasesConditions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T05:33:28.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Exercise.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Enums\\Exercise.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Models\\Enums\\Exercise.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Enums\\Exercise.cs",
-              "RelativeToolTip": "MedicalRecord\\Models\\Enums\\Exercise.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T05:13:04.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SurgicalProcedures.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Enums\\SurgicalProcedures.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Models\\Enums\\SurgicalProcedures.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Enums\\SurgicalProcedures.cs",
-              "RelativeToolTip": "MedicalRecord\\Models\\Enums\\SurgicalProcedures.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T05:12:51.022Z",
+              "WhenOpened": "2025-11-26T05:35:48.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AlcConsumption.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Enums\\AlcConsumption.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Models\\Enums\\AlcConsumption.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Enums\\AlcConsumption.cs",
-              "RelativeToolTip": "MedicalRecord\\Models\\Enums\\AlcConsumption.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "MedicalRecs.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\MedicalRecs.cs",
+              "RelativeDocumentMoniker": "MedicalRecord\\Models\\MedicalRecs.cs",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\MedicalRecs.cs",
+              "RelativeToolTip": "MedicalRecord\\Models\\MedicalRecs.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T05:12:31.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\PatientHistories\\Index.cshtml",
-              "RelativeDocumentMoniker": "MedicalRecord\\Views\\PatientHistories\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\PatientHistories\\Index.cshtml",
-              "RelativeToolTip": "MedicalRecord\\Views\\PatientHistories\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-25T04:51:11.338Z",
+              "WhenOpened": "2025-11-26T05:31:29.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\PatientHistories\\Create.cshtml",
-              "RelativeDocumentMoniker": "MedicalRecord\\Views\\PatientHistories\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\PatientHistories\\Create.cshtml",
-              "RelativeToolTip": "MedicalRecord\\Views\\PatientHistories\\Create.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAGgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-25T04:18:35.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MedicalRecord\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MedicalRecord\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowB8AAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-25T04:07:50.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PatientHistoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\PatientHistoriesController.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Controllers\\PatientHistoriesController.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\PatientHistoriesController.cs",
-              "RelativeToolTip": "MedicalRecord\\Controllers\\PatientHistoriesController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAUwCYAAAAZAAAAAAAAAA==",
+              "Title": "20251126041640_Fullname-Second.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Migrations\\20251126041640_Fullname-Second.cs",
+              "RelativeDocumentMoniker": "MedicalRecord\\Migrations\\20251126041640_Fullname-Second.cs",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Migrations\\20251126041640_Fullname-Second.cs",
+              "RelativeToolTip": "MedicalRecord\\Migrations\\20251126041640_Fullname-Second.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:04:50.685Z",
+              "WhenOpened": "2025-11-26T05:22:39.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PatientsController.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\PatientsController.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Controllers\\PatientsController.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\PatientsController.cs",
-              "RelativeToolTip": "MedicalRecord\\Controllers\\PatientsController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAgAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "20251126045219_Appt-Phycian.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Migrations\\20251126045219_Appt-Phycian.cs",
+              "RelativeDocumentMoniker": "MedicalRecord\\Migrations\\20251126045219_Appt-Phycian.cs",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Migrations\\20251126045219_Appt-Phycian.cs",
+              "RelativeToolTip": "MedicalRecord\\Migrations\\20251126045219_Appt-Phycian.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:06:27.507Z",
+              "WhenOpened": "2025-11-26T04:52:20.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Patients\\Create.cshtml",
-              "RelativeDocumentMoniker": "MedicalRecord\\Views\\Patients\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Patients\\Create.cshtml",
-              "RelativeToolTip": "MedicalRecord\\Views\\Patients\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAALAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Physicians\\Index.cshtml",
+              "RelativeDocumentMoniker": "MedicalRecord\\Views\\Physicians\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Physicians\\Index.cshtml",
+              "RelativeToolTip": "MedicalRecord\\Views\\Physicians\\Index.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAlwCMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-25T04:23:11.402Z",
+              "WhenOpened": "2025-11-26T04:51:29.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Physician.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Physician.cs",
+              "RelativeDocumentMoniker": "MedicalRecord\\Models\\Physician.cs",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Physician.cs",
+              "RelativeToolTip": "MedicalRecord\\Models\\Physician.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T04:45:11.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PhysiciansController.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\PhysiciansController.cs",
+              "RelativeDocumentMoniker": "MedicalRecord\\Controllers\\PhysiciansController.cs",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\PhysiciansController.cs",
+              "RelativeToolTip": "MedicalRecord\\Controllers\\PhysiciansController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAuwKoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T04:48:10.875Z",
               "EditorCaption": ""
             }
           ]

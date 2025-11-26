@@ -9,12 +9,12 @@ namespace MedicalRecord.Models
 
         // Core Demographics - All Required
         [Required]
-        public string FirstName { get; set; }
+        [Display(Name = "Full Name")]
+        [MinLength(2), MaxLength(50)]
+        public string FullName { get; set; }
+        
         [Required]
-        public string LastName { get; set; }
-
-        [Required]
-        public DateTime DateOfBirth { get; set; }
+        public DateOnly DateOfBirth { get; set; }
 
         [Required]
         public GenderIdentity Gender { get; set; }

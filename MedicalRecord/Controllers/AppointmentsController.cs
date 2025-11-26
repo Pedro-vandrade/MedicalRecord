@@ -22,7 +22,8 @@ namespace MedicalRecord.Controllers
         // GET: Appointments
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Appointments.ToListAsync());
+            var medicalRecordContext = _context.Appointments.Include(a => a.Patient).Include(a => a.Physician);
+            return View(await medicalRecordContext.ToListAsync());
         }
 
         // GET: Appointments/Details/5
@@ -34,6 +35,8 @@ namespace MedicalRecord.Controllers
             }
 
             var appointment = await _context.Appointments
+                .Include(a => a.Patient)
+                .Include(a => a.Physician)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (appointment == null)
             {
@@ -46,6 +49,8 @@ namespace MedicalRecord.Controllers
         // GET: Appointments/Create
         public IActionResult Create()
         {
+            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "FullName");
+            ViewData["PhysicianId"] = new SelectList(_context.Physicians, "Id", "FullDocName");
             return View();
         }
 
@@ -62,6 +67,8 @@ namespace MedicalRecord.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "FullName", appointment.PatientId);
+            ViewData["PhysicianId"] = new SelectList(_context.Physicians, "Id", "FullDocName", appointment.PhysicianId);
             return View(appointment);
         }
 
@@ -78,6 +85,8 @@ namespace MedicalRecord.Controllers
             {
                 return NotFound();
             }
+            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "FullName", appointment.PatientId);
+            ViewData["PhysicianId"] = new SelectList(_context.Physicians, "Id", "FullDocName", appointment.PhysicianId);
             return View(appointment);
         }
 
@@ -113,6 +122,8 @@ namespace MedicalRecord.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "FullName", appointment.PatientId);
+            ViewData["PhysicianId"] = new SelectList(_context.Physicians, "Id", "FullDocName", appointment.PhysicianId);
             return View(appointment);
         }
 
@@ -125,6 +136,8 @@ namespace MedicalRecord.Controllers
             }
 
             var appointment = await _context.Appointments
+                .Include(a => a.Patient)
+                .Include(a => a.Physician)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (appointment == null)
             {

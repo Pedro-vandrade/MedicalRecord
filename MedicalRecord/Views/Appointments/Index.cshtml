@@ -13,6 +13,12 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Patient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Physician)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.AppointmentDate)
             </th>
             <th>
@@ -27,6 +33,12 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Patient.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Physician.CRM)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.AppointmentDate)
             </td>
