@@ -17,15 +17,18 @@ namespace MedicalRecord.Models
         public DateOnly DateOfBirth { get; set; }
 
         [Required]
+        [Display(Name = "Gender")]
         public GenderIdentity Gender { get; set; }
 
         [Required]
+        [Display(Name = "Marital Status")]
         public MaritalStatus MaritalStatus { get; set; }
 
-        
-
         // Contact Information - All Required
+        
         [Required]
+        [RegularExpression(@"^(\(\d{2}\) \d\.\d{4}-\d{4})$", ErrorMessage = "Phone Number format must be : (XX) X.XXXX-XXXX.")]
+        [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
         [Required]
         [EmailAddress]
@@ -35,6 +38,7 @@ namespace MedicalRecord.Models
         [Required]
         public string City { get; set; }
         [Required]
+        [Display(
         public string PostalCode { get; set; }
 
         [Required]
