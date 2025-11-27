@@ -10,10 +10,14 @@ namespace MedicalRecord.Models
         public string FullDocName { get; set; }
 
         // Adicione esta propriedade para corrigir o erro CS1061
+        [Required]
         public string PhysicianSpecialty { get; set; }
 
         [Required]
         public string CRM { get; set; }
+        
+        [RegularExpression(@"^(\(\d{2}\) \d\.\d{4}-\d{4})$", ErrorMessage = "Phone Number format must be : (XX) X.XXXX-XXXX.")]
+        [Display(Name = "Phone Number")]
         [Required]
         public string PhoneNumber { get; set; }
 
