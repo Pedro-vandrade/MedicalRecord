@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +6,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MedicalRecord.Data;
 using MedicalRecord.Models;
+using MedicalRecord.Models.Enums; // Still needed for PhysicianSpecialty for FullDocName
 
 namespace MedicalRecord.Controllers
 {
@@ -19,7 +19,6 @@ namespace MedicalRecord.Controllers
             _context = context;
         }
 
-        // GET: Appointments
         public async Task<IActionResult> Index()
         {
             var medicalRecordContext = _context.Appointments.Include(a => a.Patient).Include(a => a.Physician);
@@ -29,19 +28,13 @@ namespace MedicalRecord.Controllers
         // GET: Appointments/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var appointment = await _context.Appointments
                 .Include(a => a.Patient)
                 .Include(a => a.Physician)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (appointment == null)
-            {
-                return NotFound();
-            }
+            if (appointment == null) return NotFound();
 
             return View(appointment);
         }
@@ -49,14 +42,12 @@ namespace MedicalRecord.Controllers
         // GET: Appointments/Create
         public IActionResult Create()
         {
-            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "FullName");
-            ViewData["PhysicianId"] = new SelectList(_context.Physicians, "Id", "FullDocName");
+            ViewBag.PatientId = new SelectList(_context.Patients.OrderBy(p => p.FullName), "Id", "FullName");
+            ViewBag.PhysicianId = new SelectList(_context.Physicians.OrderBy(d => d.FullDocName), "Id", "FullDocName");
             return View();
         }
 
         // POST: Appointments/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,PatientId,PhysicianId,AppointmentDate,ReasonForVisit,Notes")] Appointment appointment)
@@ -67,6 +58,8 @@ namespace MedicalRecord.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            // Reload lookups on failure
             ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "FullName", appointment.PatientId);
             ViewData["PhysicianId"] = new SelectList(_context.Physicians, "Id", "FullDocName", appointment.PhysicianId);
             return View(appointment);
@@ -75,33 +68,25 @@ namespace MedicalRecord.Controllers
         // GET: Appointments/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var appointment = await _context.Appointments.FindAsync(id);
-            if (appointment == null)
-            {
-                return NotFound();
-            }
+            if (appointment == null) return NotFound();
+
+            // Reload lookups for view
             ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "FullName", appointment.PatientId);
             ViewData["PhysicianId"] = new SelectList(_context.Physicians, "Id", "FullDocName", appointment.PhysicianId);
             return View(appointment);
         }
 
         // POST: Appointments/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,PatientId,PhysicianId,AppointmentDate,ReasonForVisit,Notes")] Appointment appointment)
         {
-            if (id != appointment.Id)
-            {
-                return NotFound();
-            }
+            if (id != appointment.Id) return NotFound();
 
+            // NOTE: ModelState will pass now if the user selects valid Patient/Physician IDs
             if (ModelState.IsValid)
             {
                 try
@@ -111,17 +96,13 @@ namespace MedicalRecord.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AppointmentExists(appointment.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    if (!AppointmentExists(appointment.Id)) return NotFound();
+                    else throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            // Reload lookups on failure
             ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "FullName", appointment.PatientId);
             ViewData["PhysicianId"] = new SelectList(_context.Physicians, "Id", "FullDocName", appointment.PhysicianId);
             return View(appointment);
@@ -130,19 +111,13 @@ namespace MedicalRecord.Controllers
         // GET: Appointments/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var appointment = await _context.Appointments
                 .Include(a => a.Patient)
                 .Include(a => a.Physician)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (appointment == null)
-            {
-                return NotFound();
-            }
+            if (appointment == null) return NotFound();
 
             return View(appointment);
         }

@@ -1,7 +1,9 @@
 ﻿@model MedicalRecord.Models.PatientHistory
+@using MedicalRecord.Models.Enums // Ensure this namespace is included
+@using System.Linq // Needed for Linq methods
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Patient History";
 }
 
 <h1>Edit</h1>
@@ -9,51 +11,54 @@
 <h4>PatientHistory</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-8">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* Hidden fields for PK and FK *@
             <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="PatientId" /> @* Keep PatientId hidden *@
+
+            @* Patient ID (Read-Only Display) *@
             <div class="form-group">
-                <label asp-for="PatientId" class="control-label"></label>
-                <select asp-for="PatientId" class="form-control" asp-items="ViewBag.PatientId"></select>
+                <label asp-for="PatientId" class="control-label">Patient (Read-Only)</label>
+                @* Use a disabled select list to show the currently linked patient *@
+                <select asp-for="PatientId" class="form-control" asp-items="ViewBag.PatientId" disabled></select>
                 <span asp-validation-for="PatientId" class="text-danger"></span>
             </div>
+
+            @* Single-Select Dropdowns *@
+
             <div class="form-group">
                 <label asp-for="BloodType" class="control-label"></label>
-                <select asp-for="BloodType" class="form-control"></select>
+                @* asp-for will automatically select the saved value *@
+                <select asp-for="BloodType" class="form-control" asp-items="@(new SelectList(ViewBag.BloodTypes))"></select>
                 <span asp-validation-for="BloodType" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="KnownConditionsAndDiseases" class="control-label"></label>
-                <select asp-for="KnownConditionsAndDiseases" class="form-control"></select>
-                <span asp-validation-for="KnownConditionsAndDiseases" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="SurgicalHistory" class="control-label"></label>
-                <select asp-for="SurgicalHistory" class="form-control"></select>
-                <span asp-validation-for="SurgicalHistory" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ExerciseActivity" class="control-label"></label>
-                <select asp-for="ExerciseActivity" class="form-control"></select>
-                <span asp-validation-for="ExerciseActivity" class="text-danger"></span>
-            </div>
+
             <div class="form-group">
                 <label asp-for="ExerciseFrequency" class="control-label"></label>
-                <select asp-for="ExerciseFrequency" class="form-control"></select>
+                <select asp-for="ExerciseFrequency" class="form-control" asp-items="@(new SelectList(ViewBag.ExerciseFrequencyEnum))"></select>
                 <span asp-validation-for="ExerciseFrequency" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Smoker" /> @Html.DisplayNameFor(model => model.Smoker)
-                </label>
+
+            <div class="form-group">
+                <label asp-for="Smoker" class="control-label"></label>
+                <select asp-for="Smoker" class="form-control" asp-items="@(new SelectList(ViewBag.SmokerStatus))"></select>
+                <span asp-validation-for="Smoker" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="AlcoholConsumption" class="control-label"></label>
-                <input asp-for="AlcoholConsumption" class="form-control" />
+                @* Assuming you've converted this to a dropdown/Enum based on our previous discussion *@
+                <select asp-for="AlcoholConsumption" class="form-control" asp-items="@(new SelectList(ViewBag.AlcoholConsumptionEnum))"></select>
                 <span asp-validation-for="AlcoholConsumption" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+
+
+            @* --- Save Button --- *@
+            <div class="form-group mt-4">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
@@ -65,5 +70,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

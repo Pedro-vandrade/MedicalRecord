@@ -14,9 +14,10 @@ namespace MedicalRecord.Models
         public string PhysicianSpecialty { get; set; }
 
         [Required]
+        [MinLength(4), MaxLength(6)]
         public string CRM { get; set; }
         
-        [RegularExpression(@"^(\(\d{2}\) \d\.\d{4}-\d{4})$", ErrorMessage = "Phone Number format must be : (XX) X.XXXX-XXXX.")]
+        [RegularExpression(@"^(\(\d{2}\)\d\.\d{4}-\d{4})$", ErrorMessage = "Phone Number format must be : (XX) X.XXXX-XXXX.")]
         [Display(Name = "Phone Number")]
         [Required]
         public string PhoneNumber { get; set; }

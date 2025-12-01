@@ -28,39 +28,80 @@
                 <span asp-validation-for="BloodType" class="text-danger"></span>
             </div>
 
-            <div class="form-checkbox">
-                <label asp-for="KnownConditionsAndDiseases" class="control-label"></label>
-                <select asp-for="KnownConditionsAndDiseases"
-                        class="form-checkbox"
-                        multiple="multiple" @* <-- ADDED FOR MULTI-SELECT *@
-                        asp-items="@(new SelectList(ViewBag.Diseases))">
-                    <option value="">-- Select Conditions/Diseases --</option>
-                </select>
+            <div class="form-group">
+                <label class="control-label">Known Conditions and Diseases</label>
+
+                <div class="border p-3" style="max-height: 200px; overflow-y: auto;">
+                    @* Loop through the list of Enums passed in ViewBag.Diseases (must be the full list of Enum values) *@
+                    @foreach (var condition in ViewBag.Diseases)
+                    {
+                        <div class="form-check">
+                            @* 🛑 CRITICAL: The 'name' attribute MUST match the List property in your ViewModel (e.g., SelectedConditions) *@
+                            <input type="checkbox"
+                                   class="form-check-input"
+                                   name="SelectedConditions"
+                                   value="@condition.ToString()"
+                                   id="@($"Condition_{condition}")" />
+                            <label class="form-check-label" for="@($"Condition_{condition}")">
+                                @condition.ToString()
+                            </label>
+                        </div>
+                    }
+                </div>
+                @* Bind the validation to the list property in the ViewModel *@
                 <span asp-validation-for="KnownConditionsAndDiseases" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="SurgicalHistory" class="control-label"></label>
-                <select asp-for="SurgicalHistory"
-                        class="form-control"
-                        multiple="multiple" @* <-- ADDED FOR MULTI-SELECT *@
-                        asp-items="@(new SelectList(ViewBag.Surgeries))">
-                    <option value="">-- Select Surgical History --</option>
-                </select>
+                <label class="control-label">Surgical Procedures</label>
+
+                <div class="border p-3" style="max-height: 200px; overflow-y: auto;">
+                    @* Loop through the list of Enums passed in ViewBag.Surgeries *@
+                    @foreach (var surgery in ViewBag.Surgeries)
+                    {
+                        <div class="form-check">
+                            @* Binds to the List<string> property in the ViewModel *@
+                            <input type="checkbox"
+                                   class="form-check-input"
+                                   name="SelectedSurgeries"
+                                   value="@surgery.ToString()"
+                                   id="@($"Surgery_{surgery}")" />
+                            <label class="form-check-label" for="@($"Surgery_{surgery}")">
+                                @surgery.ToString()
+                            </label>
+                        </div>
+                    }
+                </div>
                 <span asp-validation-for="SurgicalHistory" class="text-danger"></span>
             </div>
 
+            
+
+
+            @*Exercicios Realizados *@
             <div class="form-group">
-                <label asp-for="ExerciseActivity" class="control-label"></label>
-                <select asp-for="ExerciseActivity"
-                        class="form-control"
-                        multiple="multiple" @* <-- ADDED FOR MULTI-SELECT *@
-                        asp-items="@(new SelectList(ViewBag.ExerciseActivityEnum))">
-                    <option value="">-- Select Exercise Activity --</option>
-                </select>
+                <label class="control-label">Primary Exercise Activities</label>
+
+                <div class="border p-3" style="max-height: 150px; overflow-y: auto;">
+                    @foreach (var activity in ViewBag.ExerciseActivityEnum)
+                    {
+                        <div class="form-check">
+                            @* Binds to the List<string> property in the ViewModel *@
+                            <input type="checkbox"
+                                   class="form-check-input"
+                                   name="SelectedActivities"
+                                   value="@activity.ToString()"
+                                   id="@($"Activity_{activity}")" />
+                            <label class="form-check-label" for="@($"Activity_{activity}")">
+                                @activity.ToString()
+                            </label>
+                        </div>
+                    }
+                </div>
                 <span asp-validation-for="ExerciseActivity" class="text-danger"></span>
             </div>
 
+            @*Frequencia Exercicios *@
             <div class="form-group">
                 <label asp-for="ExerciseFrequency" class="control-label"></label>
                 <select asp-for="ExerciseFrequency"
@@ -71,10 +112,14 @@
                 <span asp-validation-for="ExerciseFrequency" class="text-danger"></span>
             </div>
 
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Smoker" /> @Html.DisplayNameFor(model => model.Smoker)
-                </label>
+            <div class="form-group">
+                <label asp-for="Smoker" class="control-label"></label>
+                <select asp-for="Smoker"
+                        class="form-control"
+                        asp-items="@(new SelectList(ViewBag.SmokingStatusEnum))">
+                    <option value="">-- Smoking Habits --</option>
+                </select>
+                <span asp-validation-for="Smoker" class="text-danger"></span>
             </div>
 
             <div class="form-group">

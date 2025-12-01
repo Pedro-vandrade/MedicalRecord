@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using MedicalRecord.ViewModels;
 
 namespace MedicalRecord.Controllers
 {
@@ -20,20 +21,22 @@ namespace MedicalRecord.Controllers
         }
 
         // 🌟 CORRECTION 1: Using unique ViewBag keys for each Enum 🌟
-        private void PopulateEnumViewBags()
-        {
+        private void PopulateEnumViewBags() { 
             ViewBag.BloodTypes = Enum.GetValues(typeof(Models.Enums.BloodType));
             ViewBag.Diseases = Enum.GetValues(typeof(Models.Enums.DiseasesConditions)); // Renamed key
             ViewBag.Surgeries = Enum.GetValues(typeof(Models.Enums.SurgicalProcedures)); // Renamed key
             ViewBag.ExerciseActivityEnum = Enum.GetValues(typeof(Models.Enums.Exercise)); // Renamed key
             ViewBag.ExerciseFrequencyEnum = Enum.GetValues(typeof(Models.Enums.ExFrequency)); // Renamed key
             ViewBag.AlcoholConsumptionEnum = Enum.GetValues(typeof(Models.Enums.AlcConsumption)); // Renamed key
+            ViewBag.SmokingStatusEnum = Enum.GetValues(typeof(Models.Enums.SmokingStatus)); // Renamed key
         }
+
+
 
         // GET: PatientHistories
         public async Task<IActionResult> Index()
         {
-          
+
             var medicalRecordContext = _context.PatientHistories;
             var patientHistories = await medicalRecordContext.ToListAsync();
             return View(patientHistories);
@@ -43,7 +46,7 @@ namespace MedicalRecord.Controllers
         // GET: PatientHistories/Create
         public IActionResult Create()
         {
-            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "Address");
+            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "FullName");
             PopulateEnumViewBags(); // 🌟 CORRECTION 2: Call the method to populate ViewBags 🌟
             return View();
         }
@@ -59,7 +62,7 @@ namespace MedicalRecord.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "Address", patientHistory.PatientId);
+            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "FullName", patientHistory.PatientId);
             PopulateEnumViewBags(); // Call method again if validation fails, to re-populate the dropdowns
             return View(patientHistory);
         }
@@ -77,7 +80,7 @@ namespace MedicalRecord.Controllers
             {
                 return NotFound();
             }
-            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "Address", patientHistory.PatientId);
+            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "FullName", patientHistory.PatientId);
             PopulateEnumViewBags(); // Call method for Edit View too
             return View(patientHistory);
         }

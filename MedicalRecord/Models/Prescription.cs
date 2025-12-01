@@ -9,19 +9,17 @@ namespace MedicalRecord.Models
         // Primary Key
         public int Id { get; set; }
 
-        // FOREIGN KEY: Links this prescription to the specific visit/encounter.
         [Required]
         public int MedicalRecordId { get; set; } 
 
-        // --- Medication Details ---
         [Required]
         public string MedicationName { get; set; }
         
         [Required]
-        public string Dosage { get; set; } // e.g., "10 mg", "500 mcg"
+        public string Dosage { get; set; }
         
         [Required]
-        public string Frequency { get; set; } // e.g., "Twice Daily (BID)", "Every 4 Hours"
+        public string Frequency { get; set; } 
         
         [Required]
         public DateTime StartDate { get; set; }

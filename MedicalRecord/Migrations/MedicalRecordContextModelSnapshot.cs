@@ -51,6 +51,42 @@ namespace MedicalRecord.Migrations
                     b.ToTable("Appointments");
                 });
 
+            modelBuilder.Entity("MedicalRecord.Models.MedicalRecs", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("DoctorNotes")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("PatientId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PhysicianId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("RecordDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Symptom")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Treatment")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PatientId");
+
+                    b.HasIndex("PhysicianId");
+
+                    b.ToTable("MedicalRecs");
+                });
+
             modelBuilder.Entity("MedicalRecord.Models.Patient", b =>
                 {
                     b.Property<int>("Id")
@@ -67,9 +103,6 @@ namespace MedicalRecord.Migrations
 
                     b.Property<DateOnly>("DateOfBirth")
                         .HasColumnType("date");
-
-                    b.Property<DateTime>("DateRegistered")
-                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -110,9 +143,8 @@ namespace MedicalRecord.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("AlcoholConsumption")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("AlcoholConsumption")
+                        .HasColumnType("int");
 
                     b.Property<int>("BloodType")
                         .HasColumnType("int");
@@ -129,8 +161,8 @@ namespace MedicalRecord.Migrations
                     b.Property<int>("PatientId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("Smoker")
-                        .HasColumnType("tinyint(1)");
+                    b.Property<int>("Smoker")
+                        .HasColumnType("int");
 
                     b.Property<int>("SurgicalHistory")
                         .HasColumnType("int");
@@ -150,7 +182,8 @@ namespace MedicalRecord.Migrations
 
                     b.Property<string>("CRM")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(6)
+                        .HasColumnType("varchar(6)");
 
                     b.Property<string>("FullDocName")
                         .IsRequired()
@@ -179,7 +212,7 @@ namespace MedicalRecord.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<DateTime>("EndDate")
+                    b.Property<DateTime?>("EndDate")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Frequency")
@@ -189,6 +222,12 @@ namespace MedicalRecord.Migrations
                     b.Property<string>("Instructions")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int>("MedicalRecordId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MedicalRecsId")
+                        .HasColumnType("int");
 
                     b.Property<string>("MedicationName")
                         .IsRequired()
@@ -205,6 +244,8 @@ namespace MedicalRecord.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("MedicalRecsId");
+
                     b.HasIndex("PatientId");
 
                     b.ToTable("Prescriptions");
@@ -220,6 +261,25 @@ namespace MedicalRecord.Migrations
 
                     b.HasOne("MedicalRecord.Models.Physician", "Physician")
                         .WithMany("Appointments")
+                        .HasForeignKey("PhysicianId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Patient");
+
+                    b.Navigation("Physician");
+                });
+
+            modelBuilder.Entity("MedicalRecord.Models.MedicalRecs", b =>
+                {
+                    b.HasOne("MedicalRecord.Models.Patient", "Patient")
+                        .WithMany()
+                        .HasForeignKey("PatientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MedicalRecord.Models.Physician", "Physician")
+                        .WithMany()
                         .HasForeignKey("PhysicianId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -249,9 +309,22 @@ namespace MedicalRecord.Migrations
 
             modelBuilder.Entity("MedicalRecord.Models.Prescription", b =>
                 {
+                    b.HasOne("MedicalRecord.Models.MedicalRecs", "MedicalRecs")
+                        .WithMany("Prescription")
+                        .HasForeignKey("MedicalRecsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("MedicalRecord.Models.Patient", null)
                         .WithMany("Prescriptions")
                         .HasForeignKey("PatientId");
+
+                    b.Navigation("MedicalRecs");
+                });
+
+            modelBuilder.Entity("MedicalRecord.Models.MedicalRecs", b =>
+                {
+                    b.Navigation("Prescription");
                 });
 
             modelBuilder.Entity("MedicalRecord.Models.Patient", b =>

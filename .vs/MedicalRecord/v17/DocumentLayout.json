@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\physician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\physician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\medicalrecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\medicalrecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\migrations\\20251126045219_appt-phycian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\migrations\\20251126045219_appt-phycian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\views\\appointments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\views\\appointments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\migrations\\20251126041640_fullname-second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\migrations\\20251126041640_fullname-second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\views\\physicians\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\views\\physicians\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\views\\appointments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\views\\appointments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\controllers\\physicianscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\controllers\\physicianscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|c:\\users\\pedro vargas\\source\\repos\\medicalrecord\\medicalrecord\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994E6DEA-45A7-4190-9865-BE874A50907E}|MedicalRecord\\MedicalRecord.csproj|solutionrelative:medicalrecord\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,98 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Prescription.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Prescription.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Models\\Prescription.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Prescription.cs",
-              "RelativeToolTip": "MedicalRecord\\Models\\Prescription.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T05:35:48.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MedicalRecs.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\MedicalRecs.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Models\\MedicalRecs.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\MedicalRecs.cs",
-              "RelativeToolTip": "MedicalRecord\\Models\\MedicalRecs.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T05:31:29.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20251126041640_Fullname-Second.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Migrations\\20251126041640_Fullname-Second.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Migrations\\20251126041640_Fullname-Second.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Migrations\\20251126041640_Fullname-Second.cs",
-              "RelativeToolTip": "MedicalRecord\\Migrations\\20251126041640_Fullname-Second.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T05:22:39.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20251126045219_Appt-Phycian.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Migrations\\20251126045219_Appt-Phycian.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Migrations\\20251126045219_Appt-Phycian.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Migrations\\20251126045219_Appt-Phycian.cs",
-              "RelativeToolTip": "MedicalRecord\\Migrations\\20251126045219_Appt-Phycian.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T04:52:20.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Physicians\\Index.cshtml",
-              "RelativeDocumentMoniker": "MedicalRecord\\Views\\Physicians\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Physicians\\Index.cshtml",
-              "RelativeToolTip": "MedicalRecord\\Views\\Physicians\\Index.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAlwCMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-26T04:51:29.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Physician.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Physician.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Models\\Physician.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Physician.cs",
-              "RelativeToolTip": "MedicalRecord\\Models\\Physician.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T04:45:11.081Z",
+              "Title": "bootstrap-flatly.css",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css",
+              "RelativeDocumentMoniker": "MedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css",
+              "RelativeToolTip": "MedicalRecord\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-01T17:53:03.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MedicalRecord\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MedicalRecord\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T17:06:50.617Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PhysiciansController.cs",
-              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\PhysiciansController.cs",
-              "RelativeDocumentMoniker": "MedicalRecord\\Controllers\\PhysiciansController.cs",
-              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\PhysiciansController.cs",
-              "RelativeToolTip": "MedicalRecord\\Controllers\\PhysiciansController.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAuwKoAAAABAAAAAAAAAA==",
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "MedicalRecord\\Controllers\\PatientsController.cs",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "MedicalRecord\\Controllers\\PatientsController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T04:48:10.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T04:48:39.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Appointments\\Create.cshtml",
+              "RelativeDocumentMoniker": "MedicalRecord\\Views\\Appointments\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Appointments\\Create.cshtml",
+              "RelativeToolTip": "MedicalRecord\\Views\\Appointments\\Create.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T04:42:13.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "MedicalRecord\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "MedicalRecord\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAswC4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T03:43:53.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "MedicalRecord\\Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Models\\Appointment.cs",
+              "RelativeToolTip": "MedicalRecord\\Models\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T04:07:51.999Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Appointments\\Delete.cshtml",
+              "RelativeDocumentMoniker": "MedicalRecord\\Views\\Appointments\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Pedro Vargas\\source\\repos\\MedicalRecord\\MedicalRecord\\Views\\Appointments\\Delete.cshtml",
+              "RelativeToolTip": "MedicalRecord\\Views\\Appointments\\Delete.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T11:51:25.255Z"
             }
           ]
         }

@@ -67,7 +67,7 @@ namespace MedicalRecord.Controllers
         public async Task<IActionResult> Create([Bind("FullName,DateOfBirth,Gender,MaritalStatus,BloodType,PhoneNumber,Email,Address,City,PostalCode")] Patient patient)
         {
             // 👈 Set the required DateRegistered field here, as it's not a form input
-            patient.DateRegistered = DateTime.Now;
+           // patient.DateRegistered = DateTime.Now;
 
             if (ModelState.IsValid)
             {
@@ -103,7 +103,7 @@ namespace MedicalRecord.Controllers
         [ValidateAntiForgeryToken]
         // ⚠️ Updated Bind list to include all new enum properties and the PK (PatientId)
         // DateRegistered is included to prevent EF from resetting it, but should not be editable by the user.
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FullName,DateOfBirth,Gender,MaritalStatus,BloodType,PhoneNumber,Email,Address,City,PostalCode,DateRegistered")] Patient patient)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,FullName,DateOfBirth,Gender,MaritalStatus,BloodType,PhoneNumber,Email,Address,City,PostalCode")] Patient patient)
         {
             // ⚠️ Check against PatientId, not Id
             if (id != patient.Id)

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MedicalRecord</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MedicalRecord.styles.css" asp-append-version="true" />
 </head>
@@ -23,16 +23,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Patients" asp-action="Index">Paciente</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Patients" asp-action="Index">Patients</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Physicians" asp-action="Index">Médico</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Physicians" asp-action="Index">Physician</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="PatientHistories" asp-action="Index">Histórico do Paciente</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="PatientHistories" asp-action="Index">Patient History</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Appointments" asp-action="Index">Consultas</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Appointments" asp-action="Index">Appointments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Prescriptions" asp-action="Index">Prescriptions</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>

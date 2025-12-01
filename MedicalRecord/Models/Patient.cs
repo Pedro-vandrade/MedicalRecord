@@ -14,6 +14,7 @@ namespace MedicalRecord.Models
         public string FullName { get; set; }
         
         [Required]
+        [Display(Name = "Birth Date")]
         public DateOnly DateOfBirth { get; set; }
 
         [Required]
@@ -27,7 +28,7 @@ namespace MedicalRecord.Models
         // Contact Information - All Required
         
         [Required]
-        [RegularExpression(@"^(\(\d{2}\) \d\.\d{4}-\d{4})$", ErrorMessage = "Phone Number format must be : (XX) X.XXXX-XXXX.")]
+        [RegularExpression(@"^(\(\d{2}\)\d\.\d{4}-\d{4})$", ErrorMessage = "Phone Number format must be : (XX) X.XXXX-XXXX.")]
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
         [Required]
@@ -38,11 +39,12 @@ namespace MedicalRecord.Models
         [Required]
         public string City { get; set; }
         [Required]
-        [Display(
+        [Display(Name = "Postal Code")]
+        [RegularExpression(@"^\d{5}-\d{3}$")]
         public string PostalCode { get; set; }
 
-        [Required]
-        public DateTime DateRegistered { get; set; }
+      //  [Required]
+     //   public DateTime DateRegistered { get; set; }
 
         public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
         public ICollection<Prescription> Prescriptions { get; set; } = new List<Prescription>();

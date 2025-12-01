@@ -17,20 +17,19 @@ namespace MedicalRecord.Models
 
         // Medical History
         [Display(Name = "Known Conditions")]
-        public DiseasesConditions KnownConditionsAndDiseases { get; set; } // e.g., "Hypertension, Type 2 Diabetes"
-       
+        public DiseasesConditions KnownConditionsAndDiseases { get; set; } 
         [Display(Name = "Surgical Procedures")]
-        public SurgicalProcedures SurgicalHistory { get; set; } // e.g., "Appendectomy (2010), Knee Replacement (2022)"
+        public SurgicalProcedures SurgicalHistory { get; set; } 
 
         // Lifestyle Factors
         [Display(Name = "Primary Exercise")]
-        public Exercise ExerciseActivity { get; set; } // e.g., "Running, Weightlifting"
+        public Exercise ExerciseActivity { get; set; } 
         [Display(Name = "Exercise Frequency")]
-        public ExFrequency ExerciseFrequency { get; set; } // e.g., "3 times per week"
+        public ExFrequency ExerciseFrequency { get; set; } 
         [Display(Name = "Smoker")]
-        public bool Smoker { get; set; } // True/False flag
+        public SmokingStatus Smoker { get; set; } 
         [Display(Name = "Alcohol Consumption")]
-        public string AlcoholConsumption { get; set; } // e.g., "Socially, 1-2 drinks per week"
+        public AlcConsumption AlcoholConsumption { get; set; } 
 
         // Navigation Property
         public Patient Patient { get; set; }
